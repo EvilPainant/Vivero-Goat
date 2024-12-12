@@ -1,5 +1,5 @@
 import { getDoc, doc } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore.js";
-import { getDataPedidos, actualizarEstadoPedido, db, actualizarStockProductoPorCodigo } from "../modelo/firebase.js";
+import { getDataPedidos, actualizarEstadoPedido, db, actualizarStockProductoPorCodigo } from "./firebase.js";
 import { getAuth } from 'https://www.gstatic.com/firebasejs/10.12.1/firebase-auth.js';
 
 const auth = getAuth();

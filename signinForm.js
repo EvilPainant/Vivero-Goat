@@ -1,5 +1,5 @@
 import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
-import { auth } from "../../modelo/firebase.js";
+import { auth } from "./firebase.js";
 import { showMessage } from "./showMessage.js";
 
 const signInForm = document.querySelector("#login-form");
@@ -20,7 +20,7 @@ signInForm.addEventListener("submit", async (e) => {
 
     showMessage("Bienvenido " + userCredentials.user.email);
 
-    window.location.href = "/vista/ListadoPlantas.html";
+    window.location.href = "ListadoPlantas.html";
 
   } catch (error) {
     if (error.code === 'auth/wrong-password') {

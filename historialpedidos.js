@@ -1,4 +1,4 @@
-import { getDataPedidos } from "../modelo/firebase.js";
+import { getDataPedidos } from "./firebase.js";
 
 const cargarHistorialPedidos = async () => {
     const historialPedidosLista = document.getElementById('historial-pedidos-lista');

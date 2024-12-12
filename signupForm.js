@@ -1,5 +1,5 @@
 import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js"
-import { auth } from "../../modelo/firebase.js";
+import { auth } from "./firebase.js";
 import { showMessage } from "./showMessage.js";
 
 const signUpForm = document.querySelector("#signup-form");
@@ -20,7 +20,7 @@ signUpForm.addEventListener("submit", async (e) => {
     signUpForm.reset();
 
     showMessage("Welcome" + userCredential.user.email);
-    window.location.href = "/vista/ListadoPlantas.html";
+    window.location.href = "ListadoPlantas.html";
 
   } catch (error) {
     if (error.code === 'auth/email-already-in-use') {

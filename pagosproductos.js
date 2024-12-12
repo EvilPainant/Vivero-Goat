@@ -1,4 +1,4 @@
-import { agregarPedido } from '../modelo/firebase.js';
+import { agregarPedido } from './firebase.js';
 
 const totalCompra = parseFloat(localStorage.getItem('totalCompra')) || 0;
 const tipoDespacho = localStorage.getItem('tipoDespacho') || 'Domicilio';
@@ -42,7 +42,7 @@ const contarTiempo = () => {
                 icon: 'error',
                 confirmButtonText: 'Aceptar'
             }).then(() => {
-                window.location.href = '../vista/indexProductosCarrito.html';
+                window.location.href = 'indexProductosCarrito.html';
             });
         }
     }
@@ -109,7 +109,7 @@ function confirmarPago(event) {
             icon: 'success',
             confirmButtonText: 'Aceptar'
         }).then(() => {
-            window.location.href = '../vista/ListadoPlantas.html';
+            window.location.href = 'ListadoPlantas.html';
         });
     }).catch((error) => {
         Swal.fire({
@@ -123,7 +123,7 @@ function confirmarPago(event) {
 
 
 function volverAlCarrito() {
-    window.location.href = '../vista/indexProductosCarrito.html';
+    window.location.href = 'indexProductosCarrito.html';
 }
 
 window.confirmarPago = confirmarPago;

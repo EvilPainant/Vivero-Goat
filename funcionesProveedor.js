@@ -1,4 +1,4 @@
-import { eliminarProveedor, getDataProveedor, obtenerProveedor, saveProveedor, updateProveedor } from "../modelo/firebase.js";
+import { eliminarProveedor, getDataProveedor, obtenerProveedor, saveProveedor, updateProveedor } from "./firebase.js";
   
   let id = 0;
   

@@ -1,4 +1,4 @@
-import { eliminarCategoria, getDataCategoria, obtenerCategoria, saveCategoria, updateCategoria } from "../modelo/firebase.js";
+import { eliminarCategoria, getDataCategoria, obtenerCategoria, saveCategoria, updateCategoria } from "./firebase.js";
   
   let id = 0;
   

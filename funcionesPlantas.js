@@ -1,4 +1,4 @@
-import { eliminarPlantas, getDataPlantas, obtenerPlantas, savePlantas, updatePlantas, getDataCategoria, getDataProveedor } from "../modelo/firebase.js";
+import { eliminarPlantas, getDataPlantas, obtenerPlantas, savePlantas, updatePlantas, getDataCategoria, getDataProveedor } from "./firebase.js";
 
 let id = 0;
 let categoriasMap = new Map();

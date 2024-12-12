@@ -1,5 +1,5 @@
 import { getDoc, doc } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore.js";
-import { getDataPedidos, db } from "../modelo/firebase.js";
+import { getDataPedidos, db } from "./firebase.js";
 
 const cargarBoletas = async () => {
     const boletasLista = document.getElementById('boletas-lista');

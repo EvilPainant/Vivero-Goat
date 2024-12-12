@@ -1,4 +1,4 @@
-import { getDataPlantas, getDataCategoria, getDataProveedor } from "../modelo/firebase.js";
+import { getDataPlantas, getDataCategoria, getDataProveedor } from "./firebase.js";
 
 let categoriasMap = new Map();
 let proveedoresMap = new Map();

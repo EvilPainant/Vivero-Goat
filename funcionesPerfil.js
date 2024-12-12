@@ -1,7 +1,7 @@
 import { auth, db } from './firebasePerfil.js';
 import { updatePassword, reauthenticateWithCredential, EmailAuthProvider, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js';
 import { doc, getDoc, updateDoc } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js';
-import { getDataPlantas, getDataCategoria, getDataProveedor } from '../../modelo/firebase.js';
+import { getDataPlantas, getDataCategoria, getDataProveedor } from './firebase.js';
 
 let categoriasMap = new Map();
 let proveedoresMap = new Map();
@@ -73,7 +73,7 @@ async function cambiarContraseña() {
 function cerrarSesion() {
     auth.signOut().then(() => {
         alert("Sesión cerrada.");
-        window.location.href = "/index.html";
+        window.location.href = "index.html";
     }).catch((error) => {
         console.error("Error al cerrar sesión:", error);
     });
