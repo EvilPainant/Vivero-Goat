@@ -111,6 +111,7 @@ const mostrarPlantas = () => {
                 <td>${item.codigo}</td>
                 <td>${item.nombre}</td>
                 <td>${nombreCategoria}</td>
+                <td>${nombreProveedor}</td>
                 <td>${item.descripcion}</td>
                 <td>${item.stock}</td>
                 <td>${item.precio}</td>
