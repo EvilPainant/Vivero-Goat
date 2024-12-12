@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago por Transferencia Electrónica</title>
+    <link rel="stylesheet" href="/vista/css/estilosPagos.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/modelo/firebase.js" type="module"></script>
+    <script src="/controlador/pagosproductos.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <button class="btn-regresar" onclick="volverAlCarrito()">Volver al Carrito</button>
+        <h1>Pago por Transferencia Electrónica</h1>
+    </header>
+
+    <section class="contenedor">
+        <h2>Información de la Transferencia</h2>
+        
+        <div class="detalle-pago">
+            <p><strong>Banco:</strong> Banco de Ejemplo</p>
+            <p><strong>Cuenta:</strong> 1234567890</p>
+            <p><strong>RUT del Beneficiario:</strong> 12.345.678-9</p>
+            <p><strong>Monto a Transferir:</strong> <span id="total-monto">0.00</span></p>
+            <p><strong>Correo para Transferencia:</strong> ejemplo@correo.com</p>
+        </div>
+
+        <div class="contador">
+            <p><strong>Tiempo restante para realizar el pago:</strong></p>
+            <p id="tiempo-restante">10:00</p>
+        </div>
+
+        <form id="form-comprobante" action="#" method="POST">
+            <div class="form-group">
+                <label for="rut">RUT (Ej: 12.224.221-2):</label>
+                <input type="text" id="rut" name="rut" required pattern="\d{1,2}\.\d{3}\.\d{3}-[\dkK]" title="Formato: 12.345.678-9" />
+            </div>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required />
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required />
+            </div>
+            <div class="form-group">
+                <label for="tipo-despacho">Tipo de Despacho:</label>
+                <input type="text" id="tipo-despacho" name="tipo-despacho" readonly required />
+            </div>
+            <div class="form-group" id="direccion-group" style="display: none;">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" />
+            </div>
+
+            <button class="btn-pagar" type="button" id="confirmar-pago">Confirmar Pago</button>
+        </form>
+    </section>
+</body>
+
+</html>

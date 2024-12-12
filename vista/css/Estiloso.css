@@ -1,0 +1,152 @@
+body {
+    background-image: url('https://images6.alphacoders.com/134/thumb-1920-1347850.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+}
+
+header, nav, main {
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 10px; 
+    padding: 15px;
+    color: white;
+}
+
+h1, h5 {
+    color: rgb(255, 255, 255) !important;
+}
+
+a:hover {
+    color: rgb(0, 0, 0) !important;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0); 
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px; 
+    overflow: hidden;
+}
+
+.card-body {
+    color: #ffffff; 
+}
+
+.card img {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+}
+
+.card .btn {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white; 
+    color: white; 
+    padding: 10px 20px;
+    font-size: 16px; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: white;
+    color: black;
+    border-color: black; 
+}
+
+main .btn {
+    background-color: rgba(255, 255, 255, 0); 
+    border: 1px solid white; 
+    color: white; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+main .btn:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+table {
+    background-color: rgba(255, 255, 255, 0) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+}
+
+table th, table td {
+    background-color: rgba(255, 255, 255, 0) !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 8px;
+}
+
+table th {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white !important;
+}
+
+table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    color: white !important;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+input:focus {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+label {
+    color: white !important;
+}
+
+input.form-control, select.form-control, textarea.form-control {
+    background-color: transparent !important;
+    border-color: #fff;
+    color: rgb(255, 255, 255);
+}
+
+input.form-control:focus, select.form-control:focus, textarea.form-control:focus {
+    background-color: transparent !important;
+    border-color: #fff !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+::placeholder {
+    color: white !important;
+}
+
+input.form-control::placeholder,
+select.form-control::placeholder,
+textarea.form-control::placeholder {
+    color: white !important;
+}
+
+select.form-control {
+    background-color: transparent !important;
+    color: white !important;
+    border: 1px solid white !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select.form-control option {
+    background-color: transparent !important;
+    color: black !important;
+}
+
+select.form-control:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5);
+}

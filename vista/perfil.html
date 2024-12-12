@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="/vista/css/Estiloso.css">
+    <link rel="stylesheet" href="/vista/css/estilosPerfil.css">
+    
+</head>
+<body>
+    <div class="perfil-container logged-in">
+        <header class=" text-center py-5">
+            <h1>Perfil</h1>
+            <div class="perfil-info" id="perfilInfo">
+                <p><strong>Email:</strong> <span id="emailUsuario">Cargando...</span></p>
+                <p><strong>Contraseña:</strong> <span id="passwordUsuario">••••••••</span></p>
+            </div>
+            <button id="btnCambiarContraseña">Cambiar Contraseña</button>
+            <button id="btnCerrarSesion">Cerrar Sesión</button>
+            <div>
+                <button>
+                    <a href="/vista/ListadoPlantas.html" style="text-decoration: none; color: inherit;">Volver</a>
+                </button>
+            </div>
+            
+        </header>
+        
+
+        
+    </div>
+
+    <main class="logged-in">
+        <div class="col-8">
+            <div class="table-responsive">
+                <h1 class="text-center">
+                    Visualización De Productos
+                </h1>
+                
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Nombre</th>
+                            <th>Categoría</th>
+                            <th>Descripción</th>
+                            <th>Stock</th>
+                            <th>Precio</th>
+                            <th>Imagen</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contenido"></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script type="module">
+        import { mostrarInfoUsuario, cambiarContraseña, cerrarSesion, mostrarPlantas } from '../controlador/perfil/funcionesPerfil.js';
+
+        document.getElementById('btnCambiarContraseña').onclick = cambiarContraseña;
+        document.getElementById('btnCerrarSesion').onclick = cerrarSesion;
+        mostrarInfoUsuario();
+        mostrarPlantas();
+    </script>
+
+
+    <form id="logout"></form>
+    <form id="signup-form"></form>
+    <form id="login-form"></form>
+    <script src="/controlador/login/main.js" type="module"></script>
+</body>
+</html>

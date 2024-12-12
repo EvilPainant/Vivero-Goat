@@ -1,0 +1,185 @@
+body {
+  background: #202020;
+  color: white;
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  background-color: black;
+  list-style-type: none;
+  width: 100%;
+  position: fixed;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.menu li {
+  float: left;
+}
+
+.menu li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-align: center;
+  padding: 24px 26px;
+  display: inline-block;
+  font-size: 25px;
+  text-shadow: 0 0 20px rgb(255, 0, 0);
+  margin-right: 10px;
+}
+
+.menu li a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 1, 1);
+  translate: 0.1px;
+  transform: translateX(5%);
+  transition: transform 0.3s;
+}
+
+.fondo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.contenedor {
+  width: 100%;
+  margin: auto;
+  padding: 10% 0;
+  height: 300%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-shadow: 0 0 15px rgb(0, 0, 0);
+}
+
+.contenedor-cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+
+.card {
+  width: 25%;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.523);
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+}
+
+.card1 {
+  background-image: url('https://images2.alphacoders.com/649/thumb-1920-649248.jpg');
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.6s;
+}
+
+.card h3 {
+  font-size: 150%;
+  margin-top: 50px;
+  margin-bottom: 450px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 7px rgb(0, 0, 0);
+}
+
+.boton {
+  background-color: rgba(0, 0, 0, 0.523);
+  border: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 20px 10px;
+  display: inline-block;
+  width: 65%;
+  margin-bottom: 25px;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.boton:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.523);
+  border: rgba(255, 255, 255, 0.523);
+}
+
+.titulo {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+
+
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.fondo-footer {
+  width: 100%;
+  margin: auto;
+  padding: 6% 0;
+  background-color: black;
+  height: 10% 0;
+  background-size: cover;
+  background-position: top;
+}
+
+.footer-text {
+  text-shadow: 0 0 90px rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  text-align: center;
+}

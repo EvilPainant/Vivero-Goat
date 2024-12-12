@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/vista/css/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/controlador/indexProductosCarrito.js" type="module" defer></script>
+    <title>Carrito de Compras</title>
+</head>
+
+<body>
+    <header>
+        <h1>Vivero</h1>
+    </header>
+
+    <section class="contenedor">
+        <a href="listadoplantas.html" class="btn-regresar">Volver al Listado de Plantas</a>
+        <a href="/index.html" class="btn-regresar">Salir</a>
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+            <table class="tabla-carrito" id="tabla-carrito">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Total</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="carrito-items">
+                </tbody>
+            </table>
+
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Total de tu compra</strong>
+                    <span class="carrito-precio-total" id="carrito-precio-total">
+                        $0,00
+                    </span>
+                </div>
+                <label for="envio" style="font-size: 16px; font-weight: bold;">Tipo de despacho:</label>
+                <select id="envio" style="padding: 10px; font-size: 16px; margin-top: 5px; cursor: pointer;">
+                    <option value="" disabled selected>Seleccione el tipo de entrega</option>
+                    <option value="domicilio">Despacho a domicilio</option>
+                    <option value="tienda">Retiro en tienda</option>
+                </select>
+            </div>
+            <button id="checkoutButton" class="btn-pagar mt-4">Proceder al Pago</button>
+        </div>
+    </section>
+</body>
+
+</html>
